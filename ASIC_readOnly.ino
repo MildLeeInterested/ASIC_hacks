@@ -1,7 +1,14 @@
 /* Communication application for ASI Controls system bus.
  *
- * This sketch intercepts analog input readings from the bus
+ * This Aduino sketch intercepts analog input readings from the bus
  * and displays as temperature readings for ACs 1,2,3,4 and 6.
+ *
+ * The code does NOT write a request for the data to the bus.
+ * Instead, it merely monitors the bus to identify telegraphs aimed at
+ * other equipment that contain the “present value” data for selected
+ * analogue inputs. 
+ * The target data is extracted and displays it on the serial monitor.
+ * This is good enough for a first attempt.
  *
  * Based on "SoftwareSerialExample" by Tom Igoe
  * 
