@@ -1,7 +1,8 @@
 /* Communication application for ASI Controls system bus.
  *
- * This sketch intercepts analog input readings from the bus
- * and displays as temperature readings for ACs 1,2,3,4 and 6.
+ * This sketch writes a request for analog input readings to the bus
+ * and then identifies and decodes the response in order to display
+ * temperature readings for ACs 1,2,3,4 and 6.
  *
  * Based on "SoftwareSerialExample" by Tom Igoe
  * 
