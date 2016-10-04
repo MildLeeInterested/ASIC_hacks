@@ -22,7 +22,7 @@ The shield also allows the TX and RX signals to be connected to any of the Ardui
 The shield is supplied with a female D9 connector and configured as a DCE (data carrier equipment) device. 
 Since the ASIC controller is also a DCE device, the two are not directly pin compatible. Thus, a null modem cable and gender changers are required, so that the Arduino acts as a DTE (data terminal equipment) device like a laptop running a terminal emulator (e.g. puTTY.)
 
-The LCD dispaly is a standard HD44780 16 pin display driven via a shift register to reduce the number of control pins.  The "LiquidCrystal595" Arduino library by Rown Sims was used. ( https://github.com/haiphamngoc/LiquidCrystal595 )  
+The LCD dispaly is a standard HD44780 16 pin display driven via a shift register to reduce the number of control pins.  The "LiquidCrystal595" Arduino library by Rowan Simms was used. ( https://github.com/haiphamngoc/LiquidCrystal595 )  
 
 # ASIC/2 data structures.
 The following is paraphrased from the ASIC/2 documentation:
