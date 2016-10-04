@@ -14,11 +14,15 @@ Very little hardware was required for the initial proof of concept:
 - An RS232 “shield” from Seeed Studios http://wiki.seeedstudio.com/wiki/RS232_Shield
 - A D9 null modem cable and gender changer.
 
+In addition to this, a 2x24 character LCD display was used to display the data.
+
 The RS232shield utilises a MAX232 IC to convert between the TTL Arduino signals and the significantly higher and lower RS232 voltages. I do not intend to discuss the technical aspects of RS232 here but suffice to say, it is a really bad idea to try to connect an Arduino to an RS232 bus without this type of voltage level conversion.
 
 The shield also allows the TX and RX signals to be connected to any of the Arduino digital pins, thus making it possible to use the “Software Serial” library.  This leaves the Arduino UART pins free for standard USB/Serial programming uploads and communication.
 The shield is supplied with a female D9 connector and configured as a DCE (data carrier equipment) device. 
 Since the ASIC controller is also a DCE device, the two are not directly pin compatible. Thus, a null modem cable and gender changers are required, so that the Arduino acts as a DTE (data terminal equipment) device like a laptop running a terminal emulator (e.g. puTTY.)
+
+The LCD dispaly is a standard HD44780 16 pin display driven via a shift register to reduce the number of control pins.  The "LiquidCrystal595" Arduino library by Rown Sims was used. ( https://github.com/haiphamngoc/LiquidCrystal595 )  
 
 # ASIC/2 data structures.
 The following is paraphrased from the ASIC/2 documentation:
