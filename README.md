@@ -1,5 +1,5 @@
 # ASIC_hacks
-ASIC HVAC comms bus experiments
+ASIC HVAC comms bus experiments.  Full documentaion on Hackaday IO: https://hackaday.io/post/46911
 
 The purpose of this collection is to document my exploration of the packet structure of an RS-485 serial communication bus utilised to transfer information between HVAC equipment manufactured by ASI Controls. (http://www.asicontrols.com/) 
 The code is for an Arduino based device that can successfully send and receive data on the bus.
